@@ -44,6 +44,10 @@ public class Anagrams{
                     if (!anagramGroups.containsKey(sortedKey)) {
                         anagramGroups.put(sortedKey, new ArrayList<String>());
                     }
+                    // Add the word to its matching anagram group
+                    anagramGroups.get(sortedKey).add(processedWord);
+                }
+            }
             
         }
     
