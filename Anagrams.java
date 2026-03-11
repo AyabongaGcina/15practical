@@ -38,6 +38,8 @@ public class Anagrams{
                     if (processedWord.isEmpty()) {
                         continue;
                     }
+                    //Generate the sorted version of the word
+                    String sortedKey = getSignature(processedWord);
             
         }
     
