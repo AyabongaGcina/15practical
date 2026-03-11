@@ -59,6 +59,17 @@ public class Anagrams{
         // Display the anagram groups found in the file
         printAnagrams(anagramGroups);
     }
+    
+     // Removes punctuation, digits, and special characters.
+     // Only letters (a–z, A–Z) are kept and converted to lowercase.
+     public static String cleanWord(String originalWord) {
+
+        // Remove all characters that are not alphabet letters
+        String cleanedWord = originalWord.replaceAll("[^a-zA-Z]", "");
+
+        // Convert the result to lowercase
+        return cleanedWord.toLowerCase();
+    }
             
         }
     
