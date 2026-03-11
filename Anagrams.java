@@ -16,5 +16,16 @@ public class Anagrams{
         //Name of text file that will be read
         String fileName="ulysses.text";
         //Map used to store grouped anagrams
+        //Key=Sorted version of the word
+        //Value=list of words with the same letter
+         Map<String, List<String>> anagramGroups = new HashMap<String, List<String>>();
+        try{
+            //Creating reader to read line by line
+             BufferedReader fileReader = new BufferedReader(new FileReader(fileName));
+            String currentLine;
+            
+        }
+    
     }
+
 }
