@@ -40,6 +40,10 @@ public class Anagrams{
                     }
                     //Generate the sorted version of the word
                     String sortedKey = getSignature(processedWord);
+                    // If the key does not exist yet, create a new list
+                    if (!anagramGroups.containsKey(sortedKey)) {
+                        anagramGroups.put(sortedKey, new ArrayList<String>());
+                    }
             
         }
     
