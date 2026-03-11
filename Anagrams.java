@@ -48,6 +48,17 @@ public class Anagrams{
                     anagramGroups.get(sortedKey).add(processedWord);
                 }
             }
+             // Close the reader when finished
+            fileReader.close();
+            System.out.println("Finished reading file: " + fileName);
+            } catch (IOException error) {
+            System.err.println("Error reading file: " + error.getMessage());
+            return;
+        }
+
+        // Display the anagram groups found in the file
+        printAnagrams(anagramGroups);
+    }
             
         }
     
