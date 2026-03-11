@@ -23,6 +23,21 @@ public class Anagrams{
             //Creating reader to read line by line
              BufferedReader fileReader = new BufferedReader(new FileReader(fileName));
             String currentLine;
+
+            //Read file until there are no more lines
+             while ((currentLine = fileReader.readLine()) != null) {
+
+                // Break the line into words using spaces
+                String[] wordList = currentLine.split("\\s+");
+                for (String rawWord : wordList) {
+
+                    // Remove punctuation and special characters
+                    String processedWord = cleanWord(rawWord);
+
+                    // Ignore empty results
+                    if (processedWord.isEmpty()) {
+                        continue;
+                    }
             
         }
     
